@@ -8714,3 +8714,15 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+.architectsname{
+  font-size: 20px;
+  
+}
+.architecttitle{
+  font-size: 15px;
+}
+.architectsquote{
+  font-size: 16px;
+}
