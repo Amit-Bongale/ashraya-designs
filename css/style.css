@@ -8755,9 +8755,12 @@ textarea.form-control {
   
 .masonry-item:hover img {
   padding: 10px;
-  transform: scale(1.1); /* zoom effect */
-  filter: brightness(1.1); /* optional brightness */
-}
+   transform: scale(1.1); /* zoom effect */
+   filter: brightness(1.1); /*optional brightness */
+ } 
+
+
+
 
 
 
