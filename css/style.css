@@ -8752,6 +8752,23 @@ textarea.form-control {
     border-radius: 10px;
   }
 
+  
+.masonry-item:hover img {
+  padding: 10px;
+  transform: scale(1.1); /* zoom effect */
+  filter: brightness(1.1); /* optional brightness */
+}
+
+
+
+
+
+
+
+
+  
+
+
   @media (max-width: 1200px) {
     .masonry-wrapper {
       column-count: 3;
