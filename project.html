@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projectgallary.css">
   </head>
   <body>
     <nav
@@ -41,7 +42,15 @@
       id="ftco-navbar"
     >
       <div class="container">
-        <a href="index.html"><img src="images/Logo/Logo-removebg-preview.png" alt="logo" width="60" height="60" style="padding-right: 10px;"></a>
+        <a href="index.html">
+          <img
+            src="images/Logo/Logo-removebg-preview.png"
+            alt="logo"
+            width="60"
+            height="60"
+            style="padding-right: 10px"
+          />
+        </a>
         <a class="navbar-brand" href="index.html">ASHRAYA DESIGNS GROUP</a>
         <button
           class="navbar-toggler"
@@ -94,8 +103,9 @@
             <div class="col-md-7 col-sm-12 text-center ftco-animate">
               <h1 class="mb-3 mt-5 bread">Project</h1>
               <p class="breadcrumbs">
-                <span class="mr-2"><a href="index.html">Home </a></span
-                ><span> Project</span>
+                <span class="mr-2"><a href="index.html">Home </a></span>
+                <span></span>
+                <span> Project</span>
               </p>
             </div>
           </div>
@@ -103,93 +113,166 @@
       </div>
     </section>
 
-
-	<section class="ftco-section py-10">
-	<div class="container-fluid  ">
-
-		<div class="masonry-wrapper ">
-
-		<div class="masonry-item ">
-			<img src="images/projects/Harikrishna.png" alt="Harikrishna">
-			<h5 class="mt-2">Residential Building Design</h5>
-		</div>
-
-		<div class="masonry-item">
-			<img src="images/projects/herosection07.JPG" alt="Sughanya">
-			<h5 class="mt-2">Residential Interior Design</h5>
-		</div>
-
-		<div class="masonry-item">
-			<img src="images/projects/herosection03.JPG" alt="Work 3">
-			<h5 class="mt-2">Residential Interior Design </h5>
-		</div>
-
-		<div class="masonry-item">
-			<img src="images/projects/Sughanya Palamaner.png" alt="Work 4">
-			<h5 class="mt-2">Residential Building Design</h5>
-		</div>
-		<div class="masonry-item">
-			<img src="images/projects/Dandala choultry.png" alt="Work 4">
-			<h5 class="mt-2">Convention Hall Design </h5>
-		</div>
-		<div class="masonry-item">
-			<img src="images/projects/Kuppam school.png" alt="Work 4">
-			<h5 class="mt-2">Institue Design</h5>
-		</div>
-		<div class="masonry-item">
-			<img src="images/projects/SAN_0232.JPG" alt="Work 4">
-			<h5 class="mt-2">Residential Interior Design</h5>
-		</div>
-		<div class="masonry-item">
-			<img src="images/projects/Kolar School - Copy.jpg" alt="Work 4">
-			<h5 class="mt-2">Institue Design</h5>
-		</div>
-
-    <div class="masonry-item">
-			<img src="images/projects/Pilla Reddy - Copy.jpg" alt="Work 4">
-			<h5 class="mt-2">Residential Building Design</h5>
-		</div>
-		<div class="masonry-item">
-			<img src="images/projects/Aswarth Ramaiah - Copy.JPG" alt="Work 4">
-			<h5 class="mt-2">Commercial Building Design</h5>
-		</div>
- 
-          <!-- Add as many items as needed -->
+    <section class="py-3">
+      <div class="project-gallary">
+        <!-- Filter Buttons -->
+        <div class="text-center mb-4">
+          <button class="btn filter-btn active" data-filter="all">All</button>
+          <button class="btn filter-btn" data-filter="residential">Residential</button>
+          <button class="btn filter-btn" data-filter="interior">Interior</button>
+          <button class="btn filter-btn" data-filter="exterior">Exterior</button>
+          <button class="btn filter-btn" data-filter="institute">Institute</button>
         </div>
 
-		<!-- Pagination (optional) -->
-		<!-- <div class="row mt-5">
-		<div class="col text-center">
-			<nav>
-			<ul class="pagination justify-content-center">
-				<li class="page-item disabled"><a class="page-link" href="#">&laquo;</a></li>
-				<li class="page-item active"><span class="page-link">1</span></li>
-				<li class="page-item"><a class="page-link" href="#">2</a></li>
-				<li class="page-item"><a class="page-link" href="#">3</a></li>
-				<li class="page-item"><a class="page-link" href="#">4</a></li>
-				<li class="page-item"><a class="page-link" href="#">5</a></li>
-				<li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-			</ul>
-			</nav>
-		</div>
-		</div> -->
-	</div>
-	</section>
+        <!-- Masonry Grid -->
+        <div class="masonry-wrapper" id="gallery">
+          
+          <div class="masonry-item" data-category="residential">
+            <img src="images/projects/Aswarth Ramaiah - Copy.JPG" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building</h6>
+          </div>
+          <!-- Repeat similar blocks with different data-category values -->
+
+          
+          <div class="masonry-item" data-category="institute">
+            <img src="images/projects/Aswarth Ramaiah - Copy.JPG" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+          
+          <div class="masonry-item" data-category="residential">
+            <img src="images/projects/Dandala choultry.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+          
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+          
+          <div class="masonry-item" data-category="exterior">
+            <img src="images/projects/Sumitra Rama Rao.jpg" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
+
+
+          <div class="masonry-item" data-category="interior">
+            <img src="images/projects/Sughanya Palamaner.png" alt="Residential Building Design" data-index="0">
+            <h6 class="mt-2">Residential Building Design</h6>
+          </div>
 
 
 
+          
+        </div>
+
+        <!-- Pagination -->
+        <nav class="mt-5">
+          <ul class="pagination justify-content-center" id="pagination" class="btn"></ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Image  Viewer -->
+    <div class="image-modal" id="imageModal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <button class="modal-nav modal-prev" id="modalPrev">&#10094;</button>
+      <div class="image-modal-content">
+        <img src="" alt="Preview" id="modalImage" class="image-modal-image">
+      </div>
+      <button class="modal-nav modal-next" id="modalNext">&#10095;</button>
+    </div>
 
 
 
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <!-- footer -->
+    <footer class="ftco-footer ftco-bg-dark ftco-section" style="padding: 50px 4px 20px 4px;">
       <div class="container">
-        <div class="row mb-5">
+        <div class="row ">
           <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
+            <div class="ftco-footer-widget ">
               <h2 class="ftco-heading-2">ASHRAYA DESIGNS</h2>
               <p>
-                ASHRAYA DESIGNS GROUP is a distinguished architecture and interior design firm dedicated to creating inspiring environments that reflect your unique vision and lifestyle.
-              </p>
+                ASHRAYA DESIGNS GROUP is a distinguished architecture and interior design firm dedicated to creating inspiring environments that reflect your unique vision and lifestyle.    </p>
               <ul
                 class="ftco-footer-social list-unstyled float-md-left float-lft mt-3"
               >
@@ -207,9 +290,9 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
+              <h2 class="ftco-heading-2">Quick Links</h2>
               <ul class="list-unstyled">
-                  <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/services.html">Services</a></li>
                 <li><a href="/project.html">Projects</a></li>
@@ -221,7 +304,6 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
-              
                 <li><a href="/services.html">Architectural Design</a></li>
                 <li><a href="/services.html">Interior Design</a></li>
                 <li><a href="/services.html">Exterior Design</a></li>
@@ -232,14 +314,29 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">1st Floor, 2924, 14th Cross Rd, near MM. Bridge, K.R.Road, Shastri Nagar, Banashankari Stage II, Banashankari, Bengaluru, Karnataka 560070</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">080 4219 6401</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">ashrayadesignsgroup@gmail.com</span></a></li>
-	              </ul>
-	            </div>
+              <h2 class="ftco-heading-2">Reach Us</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <span class="icon icon-map-marker"></span
+                    ><span class="text"
+                      >1st Floor, 2924, 14th Cross Rd, near MM. Bridge, K.R.Road, Shastri Nagar, Banashankari Stage II, Banashankari, Bengaluru, Karnataka 560 070</span
+                    >
+                  </li>
+                  <li>
+                    <a href="tel:08042196401">
+                      <span class="icon icon-phone "></span>
+                      <span class="text" style="color: rgb(196, 196, 196);">080 4219 6401</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:ashrayadesignsgroup@gmail.com"
+                      ><span class="icon icon-envelope"></span
+                      ><span class="text" style="color: rgb(196, 196, 196);">ashrayadesignsgroup@gmail.com</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -250,7 +347,7 @@
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              All rights reserved 
+              All rights reserved | Designed and Developed by <a href="https://www.thincnext.com/">thincnext</a>
             </p>
           </div>
         </div>
@@ -262,7 +359,7 @@
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              All rights reserved  
+              All rights reserved 
               <i class="icon-heart" aria-hidden="true"></i> by
               <a href="https://colorlib.com" target="_blank">Ashraya Designs</a>
               Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
@@ -297,6 +394,7 @@
       </svg>
     </div>
 
+    <script src="js/gallary.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
